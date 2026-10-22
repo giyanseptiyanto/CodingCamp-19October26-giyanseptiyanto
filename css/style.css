@@ -1,9 +1,8 @@
-/* ============================================================
-   Life Dashboard
-   Main stylesheet — keep all project CSS in this file.
-   ============================================================ */
+/* ===============================
+   To-Do List Life Dashboard - CSS
+   =============================== */
 
-/* Theme tokens */
+/* Variabel warna untuk Light dan Dark Mode */
 :root {
   color-scheme: light;
   --bg-page: #e8edf5;
