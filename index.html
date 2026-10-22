@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="greeting-widget">
+      <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Switch to Dark Mode">🌚 Dark Mode</button>
+
+      <div class="greeting-text">
+        <h1 id="greeting">Good Morning!</h1>
+        <button id="edit-name-btn" class="edit-name-btn" type="button" aria-label="Edit your name">✏️</button>
+      </div>
+
+      <p id="current-time" class="current-time">00:00:00</p>
+      <p id="current-date" class="current-date">Monday, January 1, 2000</p>
+    </header>
+
+    <main id="app">
+      <section class="widget-card" aria-labelledby="todo-title">
+        <h2 id="todo-title" class="widget-title">To-Do List</h2>
+
+        <div class="todo-input-row">
+          <input id="todo-input" class="todo-input" type="text" placeholder="Add a new task…" aria-label="New task" maxlength="200" />
+          <button id="todo-add-btn" class="todo-add-btn" type="button">Add</button>
+        </div>
+
+        <p id="todo-feedback" class="todo-feedback" aria-live="polite"></p>
+        <ul id="todo-list" class="todo-list" aria-label="Task list"></ul>
+      </section>
+
+      <section class="timer-widget widget-card" aria-labelledby="timer-title">
+        <h2 id="timer-title" class="widget-title">Focus Timer</h2>
+        <p id="timer-display" class="timer-display">25:00</p>
+        <p id="timer-status" class="timer-status" aria-live="polite"></p>
+
+        <div class="timer-controls">
+          <button id="timer-start" class="timer-btn timer-btn-start" type="button">Start</button>
+          <button id="timer-stop" class="timer-btn timer-btn-neutral" type="button">Stop</button>
+          <button id="timer-reset" class="timer-btn timer-btn-neutral" type="button">Reset</button>
+        </div>
+      </section>
+
+      <section class="widget-card" aria-labelledby="links-title">
+        <h2 id="links-title" class="widget-title">Quick Links</h2>
+
+        <div class="links-form">
+          <input id="link-name-input" class="links-input" type="text" placeholder="Site name (e.g. GitHub)" aria-label="Website name" maxlength="100" />
+          <input id="link-url-input" class="links-input" type="url" placeholder="URL (https://…)" aria-label="Website URL" maxlength="500" />
+          <button id="link-add-btn" class="links-add-btn" type="button">Add Link</button>
+        </div>
+
+        <p id="links-feedback" class="links-feedback" aria-live="polite"></p>
+        <ul id="links-list" class="links-list" aria-label="Quick links"></ul>
+      </section>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
