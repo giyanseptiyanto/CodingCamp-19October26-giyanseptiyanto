@@ -1,7 +1,6 @@
-/* ============================================================
-   Life Dashboard
-   Main JavaScript — keep all project logic in this file.
-   ============================================================ */
+/* ======================================
+   To-Do List Life Dashboard - JavaScript
+   ====================================== */
 
 "use strict";
 
@@ -50,7 +49,6 @@ function readStoredArray(key, isValidItem) {
 
     return storedValue.filter(isValidItem);
   } catch {
-    // Recover safely if the stored JSON is missing or malformed.
     return [];
   }
 }
